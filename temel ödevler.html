@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temel Ödev Uygulamaları</title>
+    <!-- Font Awesome kütüphanesi -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #101010;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 600px;
+            width: 90%; /* Sayfa genişliğinin yüzde 90'u kadar */
+            text-align: center;
+            display: flex; /* Container'ı flex olarak ayarla */
+            flex-direction: column; /* İçerikleri dikeyde sırala */
+            justify-content: center; /* İçerikleri yatayda ve dikeyde ortala */
+            align-items: center; /* İçerikleri yatayda ortala */
+        }
+        .image-container {
+            margin-bottom: 20px; /* Altta boşluk bırak */
+        }
+        .image-container img {
+            max-width: 100%; /* Resmi 100% genişlikte ayarla */
+            max-height: 200px; /* Maksimum yükseklik ayarı */
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .title {
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+        .author,
+        .contact {
+            font-style: italic;
+            font-size: 14px; /* Yazı boyutu aynı yapıldı */
+            margin-bottom: 10px;
+        }
+        .social-icons {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+        .social-icons a {
+            color: #333;
+            margin: 0 5px;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            color: #007bff;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+            align-items: center; /* Butonlar merkezi hizalandı */
+            width: 100%; /* Container'ın genişliğine göre ayarla */
+        }
+        .button {
+            background-color: lightblue;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+            width: 100%; /* Butonların genişliği %100 yapıldı */
+            text-align: center; /* Buton metinleri merkezi hizalandı */
+        }
+        .button:hover {
+            background-color: deepskyblue;
+        }
+
+        /* Medya sorguları */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%; /* Küçük ekranlarda container genişliği ayarlandı */
+            }
+            .button {
+                font-size: 14px; /* Küçük ekranlarda buton yazı boyutu düşürüldü */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">Temel Ödev Uygulamaları</h2>
+        <div class="image-container">
+            <img src="https://www.yildiz.edu.tr/sites/default/files/2024-02/yildiz-teknik-universitesi-logo-diket-turkce-.png" alt="Yıldız Teknik Üniversitesi">
+        </div>
+        <div class="author">Nazım Han tarafından programlanmıştır</div>
+        <div class="contact">İletişim için: <a href="mailto:nazimhan8@gmail.com">nazimhan8@gmail.com</a></div>
+        
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:nazimhan8@gmail.com"><i class="far fa-envelope"></i></a>
+            <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+
+        <div class="button-container">
+            <button class="button" onclick="runScript('1.temel ödev.html')">1.TEMEL ÖDEV</button>
+            <button class="button" onclick="runScript('2.temel ödev.html')">2.TEMEL ÖDEV</button>
+            <button class="button" onclick="runScript('3.temel ödev.html')">3.TEMEL ÖDEV</button>
+            <button class="button" onclick="runScript('4.temel ödev.html')">4.TEMEL ÖDEV</button>
+        </div>
+    </div>
+
+    <script>
+        // Fonksiyon: Belirtilen temel ödevi çalıştır
+        function runScript(scriptPath) {
+            window.location.href = scriptPath; // Belirtilen dosyaya yönlendir
+        }
+    </script>
+</body>
+</html>
